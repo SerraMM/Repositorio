@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<!DOCTYPE pedido>
+<pedido>
+    <destinatario>Pedro Martin Martinez</destinatario>
+    <articulo>Samsung Galaxy Tab A8</articulo>
+    <direccionentrega calle="Virgen de la cruz 2" piso="Septimo" letra="A"></direccionentrega> <!--Valdría de esta forma?-->
+        <calle>Virgen de la cruz</calle>
+        <piso>Seprimo</piso>
+        <letra>A</letra>
+        </direccionentrega>
+    <localidad>Madrid</localidad>
+    <fechaentrega>17/10/2022</fechaentrega>
+</pedido>

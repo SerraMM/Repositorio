@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MaquetacionBootstrap</title>
+  <!--UTILIZAR CDN enlace de ejcucion-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="./css/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+    crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark-subtle">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="./portada.html"><b>Infocine</b></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0 ">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="./portada.html">Portada</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./resumenes.html">Resúmenes</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./trailers">Trailers</a>
+            </li>
+        </div>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main>
+    <div class="container mt-3"> <!--Cclase principal.Te pone espacios laterales-->
+      <div class="titulopagina">
+      <h1
+        style="text-align: center; font-size: 300%; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; ">
+        Portada Infocines</h1>
+      </div>
+      <div class="row">
+        <article class="col">
+          <div class="card mb-5">
+            <img class="imagenes" class="card-image-top" src="./images/The_Party.jpg"
+              alt="No se puede cargar la imagen" />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center;"><b>The party</b><br />Fecha de estreno: 12 de octubre de
+                2017 (Dinamarca)</p>
+            </div>
+          </div>
+          <div class="card mb-5">
+            <img class="imagenes" class="card-image-top" src="./images/TheGentlemen_.jpg"
+              alt="No se puede cargar la imagen" />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center;"><b>The Gentlemen</b><br />Fecha de estreno: 3 de
+                diciembre de 2019 (Reino Unido)</p>
+            </div>
+          </div>
+          <div class="card mb-5"">
+            <img class="imagenes" class="card-image-top" src="./images/Thedeparted.jpg"
+              alt="No se puede cargar la imagen" />
+            <div class="card-body">
+              <p class="card-text" style="text-align: center;"><b>The Departed</b><br />Fecha de estreno: 6 de octubre
+                de 2006 (Estados Unidos)</p>
+            </div>
+          </div>
+        </article>
+        <article class="col">
+          <h2>Lista de buenas películas</h2><br />
+          <ul class="list-group list-group-flush">
+            <li class="list-group-item" style="font-size: 150%;"><b>- Godfellas - </b>Martin Scorssese</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- Interstellar - </b>Cristopher Nolan</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- El Caballero Oscuro - </b>Cristopher Nolan</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- Amor a quemarropa - </b>Tony Scott</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- Reservoir Dogs - </b>Quentin Tarantino</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- From Dusk Till Dawn - </b>Robert Rodriguez</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- Alien: El octavo pasajero - </b>Ridley Scott</li>
+            <li class="list-group-item" style="font-size: 150%;"><b>- Fargo - </b>Coen Brothers</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+
+
+
+    <!-- <footer>
+        Información legal | Marca registrada
+      </footer> -->
+  </main>
+</body>
+
+</html>

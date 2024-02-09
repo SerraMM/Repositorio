@@ -3,6 +3,7 @@
    --bs-accordion-active-bg: rgb(131, 129, 129);
    --bs-accordion-btn-focus-box-shadow: none; 
    margin-top: 5%;  
+   margin-bottom: 5%;
 }
 .imagenes{
    position:relative;

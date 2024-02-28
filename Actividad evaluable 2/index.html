@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./Utils/css/css.css">
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <title>sistema gestion trabjadores</title>
+</head>
+<!--Header-->
+<body>
+    <header class="navbar navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand btn-link h1" href="./index.html">S.G.T</a>
+        </div>
+    </header>
+<!--Main-->
+    <main class="container mt-4">
+        <!--Superior-->
+        <div class="container text-center">
+            <h1><b>Gestión de Trabajadores</h1>
+
+        </div>
+
+        <!--Central -->
+        <div class="container">
+            <div class="row">
+                <!--Parte IZquierda/Formulario-->
+                <div class="col-md-8 ">
+                    <form id="trabajadorFormulario">
+                        <div class="text-center h3">Introduzca los datos</div>
+                        <div class="form-group">
+                            <label for="input-nombre">Nombre:</label>
+                            <input
+                            maxlength="100"
+                            id="input-nombre"
+                            class="form-control"
+                            type="text"
+                            placeholder="Ingrese nombre"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="input-apellido">Apellido:</label>
+                            <input
+                            maxlength="100"
+                            id="input-apellido"
+                            class="form-control"
+                            type="text"
+                            placeholder="Ingrese apellido"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="input-correo">Correo:</label>
+                            <input
+                            maxlength="100"
+                            id="input-correo"
+                            class="form-control"
+                            type="text"
+                            placeholder="Ingrese correo"
+                            />
+                        </div>
+                        <div class="form-group">
+                            <label for="departamento">Departamento:</label>
+                            <select class="form-control" id="departamento">
+                                <option value="IT">IT</option>
+                                <option value="Marketing">Marketing</option>
+                                <option value="Ventas">Ventas</option>
+                                <option value="Administracion">Administración</option>
+                            </select>
+                        </div>
+                    </b>
+                        <div class="text-center">
+                            <button type="button" class="btn btn-primary mt-4 ">Agregar</button>
+                        </div>
+                    </form>
+                </div>
+                <!--Parte derecha/Lista de trabajadpres-->
+                <div class="col-md-4" >
+                    <h3 class="text-center">Lista de Trabajadores</h3>
+                    <ul id="listaTrabajadores"></ul>
+                </div>
+            <!--Resumen de trabajadores-->
+            <div class="mt-4 mb-5 text-center ">
+                    <h3>Resumen Departamentos</h3> 
+                <div id="resumenDepartamentos">
+                </div>
+            </div>
+        </div>
+    </main>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-2">
+        <p>Sistema de Gestión de Trabajadores / Lenguaje de Marcas</p>
+    </footer>
+
+
+    <script src="./Utils/Js/Gestor.js"></script>
+</body>
+
+</html>
